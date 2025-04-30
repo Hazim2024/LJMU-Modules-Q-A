@@ -3,7 +3,7 @@
             <div class="content">
                 <div class="left">
                     <div class="title">LJMU Module Q&A</div>
-                    <p>An interactive way of tracking your budget</p>
+                    <p> Your go-to platform for resolving module queries and staying informed.</p>
                 </div>
             </div>
             <div class="copyright">
