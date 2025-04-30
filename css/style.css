@@ -1,0 +1,921 @@
+/* Global Styles */
+main {
+    flex: 1 0 auto;
+    margin-top: 100px;  /* ← match your header height */
+    padding-bottom: 60px;
+
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: auto;
+    font-weight: 400;
+    background-color: #f4f7fa;
+}
+
+h1, h2 {
+    font-weight: 700;
+    color: #000000;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+.label-1 {
+    color: #162938; /* Change the color of the Username text */
+    font-size: 1em; /* Adjust the font size as needed */
+    font-weight: 500; /* Adjust the font weight if needed */
+    margin: 5px; /* Adjust the margin if needed */
+    top: 40%;
+}
+/* Header (custom style) */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 30px;
+    background: #162938E6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.title {
+    font-size: 2em;
+    color: #fff;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+
+/* Login Page */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #162938;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.login-container button {
+    padding: 12px;
+    background-color: #162938;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+/* Error banner */
+.login-container .error-message {
+    background-color: #ffe5e5;
+    color: #b00020;
+    padding: 10px;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.error-message {
+    background-color: #ffe5e5;
+    color: #b00020;
+    padding: 15px;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.success-message {
+  background-color: #f4f5c2;
+  color: #1a4250;
+  padding: 15px;
+  border: 1px solid #f4f5c2;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.login-container button:hover {
+    background-color: #1a4250;
+}
+/* Button style */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 10vh; /* Make the container take the full viewport height */
+}
+.button {
+    padding: 12px;
+    background-color: #162938;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    display: inline-block; /* Makes it behave like a button */
+    text-align: center;    /* Centers the text */
+}
+
+.button:hover {
+    background-color: #1a4250; /* Optional: Add hover effect */
+    color: white; /* Maintain white text color */
+    text-decoration: none; /* Ensure no underline appears on hover */
+}
+.back-button {
+    margin-left: 10px; /* Optional, to add spacing between buttons */
+}
+/*main page*/
+/* Welcome Banner */
+.welcomeBanner {
+  background: #25455e;
+  color: #fff;
+  padding: 3rem 1rem;
+  border-radius: 8px;
+}
+.welcomeBanner .btn-lg {
+  background-color: #ffc107;
+  color: #162938;
+  border: none;
+}
+.welcomeBanner .btn-lg:hover {
+  background-color: #e0a800;
+}
+.login-button {
+  display: inline-flex;           /* same as .vote-button */
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background: #28a745;
+  color: #fff !important;         /* override any other color */
+  border: none;
+  border-radius: 4px;
+  text-decoration: none !important; /* remove underline */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.login-button:hover {
+  background: #218838;
+  transform: scale(1.1);
+}
+/* Features Section */
+.features-heading {
+  font-size: 1.17em; /* Default <h3> size */
+  margin-bottom: 1rem; /* mb-4 = 1rem (16px) */
+  font-style: italic;
+  color: #162938;
+}
+
+/* Feature Heading (h2) */
+.feature-heading {
+  font-size: 1.17em; /* h3 size */
+  margin-bottom: 1rem; /* mb-4 */
+  font-style: italic;
+  color: #162938;
+}
+
+/* Feature Title (h3 styled like h5) */
+.feature-title {
+  font-size: 1.25rem; /* h5 size */
+  font-weight: 500; /* h5 weight */
+  margin-bottom: 0.5rem; /* Optional: Add spacing below title */
+}
+
+/* Feature Text (p) */
+.feature-text {
+  margin-bottom: 0; /* Remove default <p> margin if needed */
+  color: #555; /* Optional: Custom text color */
+  line-height: 1.5; /* Better readability */
+}
+
+.features .featureCard {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.features .featureIcon {
+  width: 55%;  /* Adjust to the desired width */
+  height: auto;  /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure it behaves like a block element */
+  padding: 10px;
+}
+.features .card-body h3 {
+  color: #162938;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* center if you like */
+}
+/* Call to Action */
+/* Call to Action */
+.cta-heading {
+  font-size: 1.5rem;  /* Matches Bootstrap's h4 */
+  margin-bottom: 1rem; /* Adds spacing below heading */
+  color: #162938;     /* Your preferred color */
+  font-weight: 500;   /* Adjust as needed */
+}
+
+/* Recent Questions */
+.recent-heading {
+  font-size: 1.17rem; /* Matches Bootstrap's h3 */
+  margin-bottom: 1rem;
+  color: #162938;
+}
+
+.recent-list {
+  /* Optional: Customize list styles */
+  border-radius: 0.25rem;
+}
+
+.recent-date {
+  color: #6c757d; /* Matches Bootstrap's .text-muted */
+  font-size: 0.875rem;
+}
+
+.recent-empty {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.cta .btn-success {
+  background-color: #162938;
+  border: none;
+}
+.cta .btn-success:hover {
+  background-color: #1a4250;
+}
+
+/* Recent Questions */
+.recent .recentList {
+  margin-top: 1rem;
+}
+.recentList .list-group-item a {
+  color: #162938;
+  font-weight: 500;
+}
+.recentList .list-group-item a:hover {
+  text-decoration: underline;
+}
+
+/* make the slider wrapper the positioning context */
+.recent-slider {
+  position: relative;
+  display: flex;
+  padding: 0 2.5rem;
+
+  align-items: center;
+}
+
+/* the viewport that hides overflow */
+.slider-window {
+  overflow: hidden;
+  flex: 1;               /* allow it to grow to fill between arrows */
+  margin: 0 1rem;        /* space between arrows and cards */
+}
+
+/* track stays the same */
+.slider-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* each card stays the same */
+.slider-card {
+  flex: 0 0 calc((100% - 2rem)/3);
+  margin-right: 1rem;
+}
+.slider-card:last-child {
+  margin-right: 0;
+}
+
+/* reposition arrows relative to .recent-slider */
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #162938;
+  color: #fff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* left arrow on left edge */
+.slider-arrow.prev {
+  left: 0;
+}
+
+/* right arrow on right edge */
+.slider-arrow.next {
+  right: 0;
+}
+
+/* responsive: 2 per slide on medium */
+@media (max-width: 768px) {
+  .slider-card {
+    flex: 0 0 calc((100% - 1rem)/2);
+  }
+}
+/* responsive: 1 per slide on small */
+@media (max-width: 480px) {
+  .slider-card {
+    flex: 0 0 100%;
+  }
+}
+
+
+
+/* Form Styles for Submit Question */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 180px auto 140px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    font-size: 1.8em;
+    color: #162938;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-container label {
+    color: #162938;
+    margin-bottom: -15px;
+}
+
+.form-container input, .form-container select, .form-container textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+}
+
+.form-container button {
+    padding: 12px;
+    background-color: #162938;
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #1a4250;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, #162938 0%, #162938 50%, #162938 100%);
+    color: #fff;
+    padding-top: 10px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .left p {
+    margin-top: 0;
+}
+
+footer .right {
+    display: flex;
+    gap: 40px;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 8px 0;
+}
+
+footer .copyright {
+    border-top: 1px solid rgba(255, 255,255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer .socials {
+    display: flex;
+    gap: 40px;
+}
+
+.socials a {
+    margin: 0 5px; /* Space between icons */
+    color: white; /* Icon color */
+    text-decoration: none;
+}
+
+.socials ion-icon {
+    font-size: 30px; 
+    transition: transform 0.2s; 
+}
+.quick-links-title {
+    font-size: 20px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+.socials ion-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+/* Navigation link active styles */
+#Modules-link.active, #Submit-link.active, #View-link.active {
+    background-color: #fff;
+    color: #162938;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Default styles (desktop) */
+button.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+}
+
+/* Transformations for open state */
+.hamburger--open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Mobile-specific styles */
+@media (max-width: 736px) {
+  button.hamburger {
+    display: flex; /* Visible only in mobile view */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1001; /* Ensure it's above other elements */
+  }
+
+  .navigation {
+    position: fixed;
+    top: 85px; /* Adjust to match header height */
+    left: 0;
+    width: 100%;
+    background: rgba(22, 41, 56, 0.9); /* Slightly transparent background */
+    padding: 10px 0 25px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    display: flex;
+    z-index: 1000;
+    justify-content: center; /* Center vertically */
+    align-items: center;
+  }
+
+  .navigation.nav--open {
+    transform: translateX(0); /* Slide in menu */
+  }
+
+  .navigation .nav_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+  }
+
+  .navigation .nav_link {
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 0.1rem 0;
+    margin: 1rem 0;
+  }
+}
+
+/* =========================================================================
+   view_questions.php overrides & layout
+   ========================================================================= */
+
+/* Container */
+.questions-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Filter Pills */
+.filter-pills {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+.filter-pill,
+.filter-link {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  background: #ececec;
+  color: #333;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+.filter-link.active {
+  background: #162938;
+  color: #fff;
+}
+.filter-link:hover {
+  background: #c4c4c4;
+  color: #162938; /* Maintain white text color */
+  text-decoration: none; /* Ensure no underline appears on hover */
+}
+
+/* Grid of cards */
+.questions-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Column wrapper (spacing) */
+.question-column {
+  display: flex;            /* so card can stretch */
+}
+
+/* Card */
+.question-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;                  /* fill .question-column */
+  overflow: hidden;
+}
+
+/* Card header */
+.question-card-header {
+  background: #162938;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Module badge */
+.module-badge {
+  background: #f4f4f4;
+  color: #333;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+/* Status badge */
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+}
+.status-badge.unanswered { background: #ff0707; color: #ffffff; }
+.status-badge.answered   { background: #28a745; }
+
+/* Card body */
+.question-card-body {
+  padding: 1rem;
+  flex: 1; /* push footer down */
+}
+.question-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+.question-text {
+  margin: 0 0 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+.question-meta {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Card footer */
+.question-card-footer {
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Vote button */
+.vote-button {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  display: inline-flex;       /* make button a flex container */
+  align-items: center;        /* vertically center icon + text */
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  transition: transform 0.2s;
+}
+.vote-button:hover {
+  background: #218838;
+  transform: scale(1.1);
+}
+
+.vote-button ion-icon {
+  font-size: 1.2rem;
+  width: 22px;   
+  height: 22px;
+}
+
+/* Answer link for answer_question.php*/
+.answer-button {
+  background: #162938;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  transition: transform 0.2s;
+}
+.answer-button:hover {
+  background: #031422;
+  color: white; /* Maintain white text color */
+  text-decoration: none; /* Ensure no underline appears on hover */
+  transform: scale(1.1);
+}
+
+/* right next to .answer-button rules */
+
+.view-button {
+  background: #162938;       /* a neutral grey */
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+  transition: transform 0.2s;
+}
+.view-button:hover {
+  background: #031422;
+  transform: scale(1.1);
+  color: white; /* Maintain white text color */
+  text-decoration: none; /* Ensure no underline appears on hover */
+}
+
+
+.vote-button.voted {
+    background-color: #ffc107;
+    color: #333;
+    border-color: #e0a800;
+  }
+
+
+/* when showing an answer-card immediately after a question-card, add some space */
+.answer-card {
+  margin-top: 4.5rem;    /* gap above answers */
+  margin-bottom: 1.5rem; /* gap below answers */
+}
+
+/* center the header text in any .question-card-header (including answers) */
+.question-card-headeri {
+  background: #162938;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+.question-card-body {
+  padding: 1rem;
+  flex: 1; /* push footer down */
+  margin-top: 0.5rem;               /* optional spacing above */
+}
+
+.answer-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+.back-button-student {
+  width: 100%;
+  padding: 0.5rem 1rem;      /* match your .btn padding */
+  font-size: 1rem;           /* match your .btn font-size */
+  text-align: center;
+ 
+}
+
+#btnScrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #162938;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  display: none;
+  z-index: 10000;
+
+}
+
+#btnScrollToTop ion-icon {
+  font-size: 2rem;    /* or 24px, 32px, etc. */
+  width: 2rem;        /* ensure the viewBox scales too */
+  height: 3rem;
+ 
+}
+
+#btnScrollToTop ion-icon:active {
+  transform: scale(0.9); /* Optional: Add a scale effect on click */
+}
+
+#btnScrollToTop:hover {
+  background-color: #1a4250; /* Optional: Change color on hover */
+  color: white; /* Maintain white text color */
+  text-decoration: none; /* Ensure no underline appears on hover */
+  transform: scale(1.1); /* Optional: Add a scale effect on hover */
+}
+
+.highlight {
+  background-color: rgb(247, 247, 7);   /* light yellow */
+}
+
+.flash {
+  position: fixed; 
+  top:0; 
+  left:0; 
+  right:0;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding:1rem; 
+  color:#fff; 
+  background:#f44336;
+  transform: translateY(-100%); 
+  transition: transform .5s ease;
+  z-index:9999;
+}
+
+.flash.show {
+  transform: translateY(0);
+}
+
+.flash__close {
+  background:none; 
+  border:none; 
+  color:#fff; 
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+
