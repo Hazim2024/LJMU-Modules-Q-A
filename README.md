@@ -84,21 +84,21 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 3. Open **http://localhost:8000/main.php** in your browser.
 
 ⚙️ Usage
-Register or log in as Student or Staff.
+1. Register or log in as Student or Staff.
 
-Student workflow:
+2. Student workflow:
 
-Submit a new question (choose module, title, description).
+- Submit a new question (choose module, title, description).
 
-Vote on existing questions to raise priority.
+- Vote on existing questions to raise priority.
 
-Filter by module/status or search by keyword.
+- Filter by module/status or search by keyword.
 
-Staff workflow:
+3. Staff workflow:
 
-View unanswered questions.
+- View unanswered questions.
 
-Post one or more answers per question.
+- Post one or more answers per question.
 
 ♿ Accessibility & Responsive Design
 - Keyboard: All controls reachable via Tab/Enter.
