@@ -15,9 +15,8 @@ A responsive, accessible question and answer portal for LJMU modules where stude
 - [Installation](#installation)  
 - [Usage](#usage)  
 - [Accessibility & Responsive Design](#accessibility--responsive-design)  
-- [File Structure](#file-structure)  
 - [Future Improvements](#future-improvements)  
-- [License](#license)  
+
 
 ---
 
@@ -79,8 +78,47 @@ This is the second‑assignment implementation for the Mobile & Web Development 
    git clone https://github.com/<YOUR_USERNAME>/ljmu-module-qa.git
    cd ljmu-module-qa
 2. **Serve with PHP’s built‑in server**
-   
+   ```bash
     php -S localhost:8000
    
-4. Open **http://localhost:8000/main.php** in your browser.
-   
+3. Open **http://localhost:8000/main.php** in your browser.
+
+⚙️ Usage
+Register or log in as Student or Staff.
+
+Student workflow:
+
+Submit a new question (choose module, title, description).
+
+Vote on existing questions to raise priority.
+
+Filter by module/status or search by keyword.
+
+Staff workflow:
+
+View unanswered questions.
+
+Post one or more answers per question.
+
+♿ Accessibility & Responsive Design
+Keyboard: All controls reachable via Tab/Enter.
+
+Screen readers: ARIA roles, labels, aria-expanded, aria-controls.
+
+
+Responsive:
+
+Grid of cards on desktop
+
+Hamburger menu & vertical nav on mobile (< 736 px)
+
+Slider shows 3→2→1 cards depending on width
+
+
+🚧 Future Improvements
+
+Add pagination for large question sets.
+
+Rich‑text editing for questions/answers.
+
+User profile pages & notifications.
