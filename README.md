@@ -64,14 +64,6 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 
 ---
 
-## 🚀 Demo
-
-> _You can link to a live demo or include screenshots here._
-
-![Home view on desktop](docs/screenshots/home-desktop.png)  
-![Mobile menu](docs/screenshots/home-mobile.png)  
-
----
 
 ## ⚙️ Getting Started
 
@@ -87,7 +79,8 @@ This is the second‑assignment implementation for the Mobile & Web Development 
    git clone https://github.com/<YOUR_USERNAME>/ljmu-module-qa.git
    cd ljmu-module-qa
 2. **Serve with PHP’s built‑in server**
+   
     php -S localhost:8000
    
-3. Open **http://localhost:8000/main.php** in your browser.
+4. Open **http://localhost:8000/main.php** in your browser.
    
