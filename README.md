@@ -101,24 +101,24 @@ View unanswered questions.
 Post one or more answers per question.
 
 ♿ Accessibility & Responsive Design
-Keyboard: All controls reachable via Tab/Enter.
+- Keyboard: All controls reachable via Tab/Enter.
 
-Screen readers: ARIA roles, labels, aria-expanded, aria-controls.
+- Screen readers: ARIA roles, labels, aria-expanded, aria-controls.
 
 
-Responsive:
+1. Responsive:
 
-Grid of cards on desktop
+   - Grid of cards on desktop
 
-Hamburger menu & vertical nav on mobile (< 736 px)
+   - Hamburger menu & vertical nav on mobile (< 736 px)
 
-Slider shows 3→2→1 cards depending on width
+   - Slider shows 3→2→1 cards depending on width
 
 
 🚧 Future Improvements
 
-Add pagination for large question sets.
+- Add pagination for large question sets.
 
-Rich‑text editing for questions/answers.
+- Rich‑text editing for questions/answers.
 
-User profile pages & notifications.
+- User profile pages & notifications.
