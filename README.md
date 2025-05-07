@@ -55,9 +55,9 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 
 ## 🛠 Tech Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6), jQuery, AJAX  
+- **Frontend**: HTML5, CSS3, JavaScript (ES6), jQuery and AJAX  
 - **Backend**: PHP 8  
-- **Data storage**: JSON files (`data/questions.json`, `data/answers.json`, `data/question_votes.json`)  
+- **Data storage**: JSON files 
 - **Icons**: Ionicons  
 - **CSS framework**: Bootstrap 4 (grid only; custom CSS for styling)  
 
