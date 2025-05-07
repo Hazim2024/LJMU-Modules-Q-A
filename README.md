@@ -75,13 +75,13 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/<YOUR_USERNAME>/ljmu-module-qa.git
+   git clone https://github.com/Hazim2024/ljmu-module-qa.git
    cd ljmu-module-qa
-2. **Serve with PHP’s built‑in server**
+2. **Serve with PHP’s built‑in server eg.**
    ```bash
     php -S localhost:8000
    
-3. Open **http://localhost:8000/main.php** in your browser.
+3. Open **your local host address** in your browser.
 
 ⚙️ Usage
 1. Register or log in as Student or Staff.
