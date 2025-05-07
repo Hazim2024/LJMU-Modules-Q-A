@@ -84,7 +84,7 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 3. Open **your local host address** in your browser.
 
 ⚙️ Usage
-1. Register or log in as Student or Staff.
+1. Log in as Student or Staff.
 
 2. Student workflow:
 
@@ -117,8 +117,10 @@ This is the second‑assignment implementation for the Mobile & Web Development 
 
 🚧 Future Improvements
 
-- Add pagination for large question sets.
+- Add Registeration system
+  
+- Add pagination for large question sets
 
-- Rich‑text editing for questions/answers.
+- Rich‑text editing for questions/answers
 
-- User profile pages & notifications.
+- User profile pages & notifications
