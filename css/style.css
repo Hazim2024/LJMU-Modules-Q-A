@@ -1,7 +1,6 @@
-/* Global Styles */
 main {
     flex: 1 0 auto;
-    margin-top: 100px;  /* ← match your header height */
+    margin-top: 100px; 
     padding-bottom: 60px;
 
   }
@@ -38,13 +37,12 @@ h1, h2 {
     user-select: none;
 }
 .label-1 {
-    color: #162938; /* Change the color of the Username text */
-    font-size: 1em; /* Adjust the font size as needed */
-    font-weight: 500; /* Adjust the font weight if needed */
-    margin: 5px; /* Adjust the margin if needed */
+    color: #162938; 
+    font-size: 1em; 
+    font-weight: 500; 
+    margin: 5px; 
     top: 40%;
 }
-/* Header (custom style) */
 header {
     position: fixed;
     top: 0;
@@ -173,9 +171,9 @@ header {
 /* Button style */
 .button-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 10vh; /* Make the container take the full viewport height */
+    justify-content: center; 
+    align-items: center; 
+    height: 10vh; 
 }
 .button {
     padding: 12px;
@@ -186,20 +184,20 @@ header {
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 5px;
-    display: inline-block; /* Makes it behave like a button */
-    text-align: center;    /* Centers the text */
+    display: inline-block; 
+    text-align: center;    
 }
 
 .button:hover {
-    background-color: #1a4250; /* Optional: Add hover effect */
-    color: white; /* Maintain white text color */
-    text-decoration: none; /* Ensure no underline appears on hover */
+    background-color: #1a4250; 
+    color: white; 
+    text-decoration: none; 
 }
 .back-button {
-    margin-left: 10px; /* Optional, to add spacing between buttons */
+    margin-left: 10px; 
 }
 /*main page*/
-/* Welcome Banner */
+
 .welcomeBanner {
   background: #25455e;
   color: #fff;
@@ -215,16 +213,16 @@ header {
   background-color: #e0a800;
 }
 .login-button {
-  display: inline-flex;           /* same as .vote-button */
+  display: inline-flex;          
   align-items: center;
   justify-content: center;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   background: #28a745;
-  color: #fff !important;         /* override any other color */
+  color: #fff !important;        
   border: none;
   border-radius: 4px;
-  text-decoration: none !important; /* remove underline */
+  text-decoration: none !important; 
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
 }
@@ -233,34 +231,31 @@ header {
   background: #218838;
   transform: scale(1.1);
 }
-/* Features Section */
 .features-heading {
-  font-size: 1.17em; /* Default <h3> size */
-  margin-bottom: 1rem; /* mb-4 = 1rem (16px) */
+  font-size: 1.17em; 
+  margin-bottom: 1rem; 
   font-style: italic;
   color: #162938;
 }
 
-/* Feature Heading (h2) */
 .feature-heading {
-  font-size: 1.17em; /* h3 size */
-  margin-bottom: 1rem; /* mb-4 */
+  font-size: 1.17em; 
+  margin-bottom: 1rem; 
   font-style: italic;
   color: #162938;
 }
 
-/* Feature Title (h3 styled like h5) */
 .feature-title {
-  font-size: 1.25rem; /* h5 size */
-  font-weight: 500; /* h5 weight */
-  margin-bottom: 0.5rem; /* Optional: Add spacing below title */
+  font-size: 1.25rem; 
+  font-weight: 500; 
+  margin-bottom: 0.5rem; 
 }
 
-/* Feature Text (p) */
+
 .feature-text {
-  margin-bottom: 0; /* Remove default <p> margin if needed */
-  color: #555; /* Optional: Custom text color */
-  line-height: 1.5; /* Better readability */
+  margin-bottom: 0; 
+  color: #555; 
+  line-height: 1.5; 
 }
 
 .features .featureCard {
@@ -268,10 +263,10 @@ header {
   text-align: center;
 }
 .features .featureIcon {
-  width: 55%;  /* Adjust to the desired width */
-  height: auto;  /* Maintain aspect ratio */
-  margin: 0 auto; /* Center the image */
-  display: block; /* Ensure it behaves like a block element */
+  width: 55%;  
+  height: auto;  
+  margin: 0 auto; 
+  display: block; 
   padding: 10px;
 }
 .features .card-body h3 {
@@ -282,31 +277,30 @@ header {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* center if you like */
+  margin: 0 auto; 
 }
-/* Call to Action */
+
 /* Call to Action */
 .cta-heading {
-  font-size: 1.5rem;  /* Matches Bootstrap's h4 */
-  margin-bottom: 1rem; /* Adds spacing below heading */
-  color: #162938;     /* Your preferred color */
-  font-weight: 500;   /* Adjust as needed */
+  font-size: 1.5rem;  
+  margin-bottom: 1rem; 
+  color: #162938;     
+  font-weight: 500;   
 }
 
 /* Recent Questions */
 .recent-heading {
-  font-size: 1.17rem; /* Matches Bootstrap's h3 */
+  font-size: 1.17rem; 
   margin-bottom: 1rem;
   color: #162938;
 }
 
 .recent-list {
-  /* Optional: Customize list styles */
   border-radius: 0.25rem;
 }
 
 .recent-date {
-  color: #6c757d; /* Matches Bootstrap's .text-muted */
+  color: #6c757d; 
   font-size: 0.875rem;
 }
 
@@ -335,7 +329,6 @@ header {
   text-decoration: underline;
 }
 
-/* make the slider wrapper the positioning context */
 .recent-slider {
   position: relative;
   display: flex;
@@ -347,8 +340,8 @@ header {
 /* the viewport that hides overflow */
 .slider-window {
   overflow: hidden;
-  flex: 1;               /* allow it to grow to fill between arrows */
-  margin: 0 1rem;        /* space between arrows and cards */
+  flex: 1;               
+  margin: 0 1rem;        
 }
 
 /* track stays the same */
@@ -357,7 +350,6 @@ header {
   transition: transform 0.4s ease;
 }
 
-/* each card stays the same */
 .slider-card {
   flex: 0 0 calc((100% - 2rem)/3);
   margin-right: 1rem;
@@ -366,7 +358,6 @@ header {
   margin-right: 0;
 }
 
-/* reposition arrows relative to .recent-slider */
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -381,23 +372,19 @@ header {
   z-index: 10;
 }
 
-/* left arrow on left edge */
 .slider-arrow.prev {
   left: 0;
 }
 
-/* right arrow on right edge */
 .slider-arrow.next {
   right: 0;
 }
 
-/* responsive: 2 per slide on medium */
 @media (max-width: 768px) {
   .slider-card {
     flex: 0 0 calc((100% - 1rem)/2);
   }
 }
-/* responsive: 1 per slide on small */
 @media (max-width: 480px) {
   .slider-card {
     flex: 0 0 100%;
@@ -509,8 +496,8 @@ footer .socials {
 }
 
 .socials a {
-    margin: 0 5px; /* Space between icons */
-    color: white; /* Icon color */
+    margin: 0 5px; 
+    color: white; 
     text-decoration: none;
 }
 
@@ -573,34 +560,34 @@ button.hamburger {
 /* Mobile-specific styles */
 @media (max-width: 736px) {
   button.hamburger {
-    display: flex; /* Visible only in mobile view */
+    display: flex; 
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
     position: absolute;
     top: 15px;
     right: 15px;
-    z-index: 1001; /* Ensure it's above other elements */
+    z-index: 1001; 
   }
 
   .navigation {
     position: fixed;
-    top: 85px; /* Adjust to match header height */
+    top: 85px; 
     left: 0;
     width: 100%;
-    background: rgba(22, 41, 56, 0.9); /* Slightly transparent background */
+    background: rgba(22, 41, 56, 0.9); 
     padding: 10px 0 25px;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
     display: flex;
     z-index: 1000;
-    justify-content: center; /* Center vertically */
+    justify-content: center; 
     align-items: center;
   }
 
   .navigation.nav--open {
-    transform: translateX(0); /* Slide in menu */
+    transform: translateX(0); 
   }
 
   .navigation .nav_list {
@@ -621,9 +608,6 @@ button.hamburger {
   }
 }
 
-/* =========================================================================
-   view_questions.php overrides & layout
-   ========================================================================= */
 
 /* Container */
 .questions-container {
@@ -657,8 +641,8 @@ button.hamburger {
 }
 .filter-link:hover {
   background: #c4c4c4;
-  color: #162938; /* Maintain white text color */
-  text-decoration: none; /* Ensure no underline appears on hover */
+  color: #162938; 
+  text-decoration: none; 
 }
 
 /* Grid of cards */
@@ -670,7 +654,7 @@ button.hamburger {
 
 /* Column wrapper (spacing) */
 .question-column {
-  display: flex;            /* so card can stretch */
+  display: flex;            
 }
 
 /* Card */
@@ -680,7 +664,7 @@ button.hamburger {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  flex: 1;                  /* fill .question-column */
+  flex: 1;                  
   overflow: hidden;
 }
 
@@ -717,7 +701,7 @@ button.hamburger {
 /* Card body */
 .question-card-body {
   padding: 1rem;
-  flex: 1; /* push footer down */
+  flex: 1; 
 }
 .question-title {
   margin: 0 0 0.5rem;
@@ -750,8 +734,8 @@ button.hamburger {
   color: #fff;
   border: none;
   border-radius: 4px;
-  display: inline-flex;       /* make button a flex container */
-  align-items: center;        /* vertically center icon + text */
+  display: inline-flex;       
+  align-items: center;        
   justify-content: center;
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
@@ -782,15 +766,15 @@ button.hamburger {
 }
 .answer-button:hover {
   background: #031422;
-  color: white; /* Maintain white text color */
-  text-decoration: none; /* Ensure no underline appears on hover */
+  color: white; 
+  text-decoration: none; 
   transform: scale(1.1);
 }
 
 /* right next to .answer-button rules */
 
 .view-button {
-  background: #162938;       /* a neutral grey */
+  background: #162938;       
   color: #fff;
   border-radius: 4px;
   padding: 0.5rem 1rem;
@@ -801,8 +785,8 @@ button.hamburger {
 .view-button:hover {
   background: #031422;
   transform: scale(1.1);
-  color: white; /* Maintain white text color */
-  text-decoration: none; /* Ensure no underline appears on hover */
+  color: white; 
+  text-decoration: none; 
 }
 
 
@@ -813,13 +797,11 @@ button.hamburger {
   }
 
 
-/* when showing an answer-card immediately after a question-card, add some space */
 .answer-card {
-  margin-top: 4.5rem;    /* gap above answers */
-  margin-bottom: 1.5rem; /* gap below answers */
+  margin-top: 4.5rem;    
+  margin-bottom: 1.5rem; 
 }
 
-/* center the header text in any .question-card-header (including answers) */
 .question-card-headeri {
   background: #162938;
   color: #fff;
@@ -832,8 +814,8 @@ button.hamburger {
 
 .question-card-body {
   padding: 1rem;
-  flex: 1; /* push footer down */
-  margin-top: 0.5rem;               /* optional spacing above */
+  flex: 1; 
+  margin-top: 0.5rem;              
 }
 
 .answer-divider {
@@ -844,8 +826,8 @@ button.hamburger {
 
 .back-button-student {
   width: 100%;
-  padding: 0.5rem 1rem;      /* match your .btn padding */
-  font-size: 1rem;           /* match your .btn font-size */
+  padding: 0.5rem 1rem;      
+  font-size: 1rem;           
   text-align: center;
  
 }
@@ -869,25 +851,25 @@ button.hamburger {
 }
 
 #btnScrollToTop ion-icon {
-  font-size: 2rem;    /* or 24px, 32px, etc. */
-  width: 2rem;        /* ensure the viewBox scales too */
+  font-size: 2rem;    
+  width: 2rem;        
   height: 3rem;
  
 }
 
 #btnScrollToTop ion-icon:active {
-  transform: scale(0.9); /* Optional: Add a scale effect on click */
+  transform: scale(0.9); 
 }
 
 #btnScrollToTop:hover {
-  background-color: #1a4250; /* Optional: Change color on hover */
-  color: white; /* Maintain white text color */
-  text-decoration: none; /* Ensure no underline appears on hover */
-  transform: scale(1.1); /* Optional: Add a scale effect on hover */
+  background-color: #1a4250; 
+  color: white; 
+  text-decoration: none; 
+  transform: scale(1.1); 
 }
 
 .highlight {
-  background-color: rgb(247, 247, 7);   /* light yellow */
+  background-color: rgb(247, 247, 7);   
 }
 
 .flash {
